@@ -14,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', [TodoListController::class, 'index'])->name('todos.index');
-Route::get('/', [TodoListController::class, 'index'])->name('todos.store');
 Route::resource('todos', TodoListController::class);
 
